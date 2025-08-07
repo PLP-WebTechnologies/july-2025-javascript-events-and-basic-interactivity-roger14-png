@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🧠 Interactive JS Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎮 JavaScript Playground</h1>
+    <button id="themeToggle">Toggle Light/Dark Mode 🌗</button>
+  </header>
+
+  <!-- 🎯 Part 1: Event Handling -->
+  <section class="card" id="eventSection">
+    <h2>🎯 Event Handling</h2>
+    <button id="clickBtn">Click Me!</button>
+    <div id="hoverBox">Hover over me!</div>
+    <input type="text" id="keyInput" placeholder="Type something..." />
+    <p id="eventFeedback"></p>
+  </section>
+
+  <!-- 🎮 Part 2: Interactive Elements -->
+  <section class="card" id="faqSection">
+    <h2>🎮 FAQ Section (Click to Toggle)</h2>
+    <div class="faq">
+      <h3 class="faq-question">What is JavaScript?</h3>
+      <p class="faq-answer">JavaScript is a scripting language used to create dynamic website content.</p>
+    </div>
+    <div class="faq">
+      <h3 class="faq-question">What does DOM stand for?</h3>
+      <p class="faq-answer">Document Object Model - a tree structure representing HTML elements.</p>
+    </div>
+  </section>
+
+  <!-- 📋✅ Part 3: Form Validation -->
+  <section class="card" id="formSection">
+    <h2>📋 Register Here</h2>
+    <form id="registerForm" novalidate>
+      <label>Name:</label>
+      <input type="text" id="name" />
+      <small class="error" id="nameError"></small>
+
+      <label>Email:</label>
+      <input type="text" id="email" />
+      <small class="error" id="emailError"></small>
+
+      <label>Password:</label>
+      <input type="password" id="password" />
+      <small class="error" id="passwordError"></small>
+
+      <button type="submit">Submit ✅</button>
+      <p id="formSuccess"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
